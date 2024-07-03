@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Hygiene</title>
+    <style>
+        div{width:400px; height:500px; margin:auto; border:5px solid red; position:relative; overflow: hidden;}
+        img:not(:first-of-type){position: absolute; left:0; top:0;}
+
+        [src="images/1-1.png"]{animation:show 1s 0.5s both;}
+        [src="images/1-2.png"]{animation:down 2s 0.8s both;}
+        [src="images/1-3.png"]{animation:big 1s 0s both;}
+        [src="images/1-4.png"]{animation:toleft 2.5s 1.5s both;}
+        [src="images/1-5.png"]{animation:show 3.0s 2.0s both;}
+        @keyframes show{
+            from{opacity: 0;}
+            to{opacity: 1;}
+        }
+        @keyframes down{
+            from {top:-150px; opacity: 0;}
+            to {top:0px; opacity: 1;}
+        }
+        @keyframes big{
+            from {transform: scaleX(0); }
+            to {transform: scaleX(1); }
+        }
+        @keyframes toleft{
+            from {left: 200px; opacity: 0;}
+            to {left: 0px; opacity: 1;}
+        }
+      
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/bg1.jpg" alt="background">
+        <img src="images/1-1.png" alt="Hand and plant">
+        <img src="images/1-2.png" alt="hands">
+        <img src="images/1-3.png" alt="ment">
+        <img src="images/1-4.png" alt="car">
+        <img src="images/1-5.png" alt="rest">
+    </div>
+</body>
+</html>
